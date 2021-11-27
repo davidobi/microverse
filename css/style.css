@@ -27,10 +27,14 @@ header > nav-link {
     margin: 10px;
     color: black;
     list-style: none;
-    
-
 
 }
+@media screen and (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+  }
+
 
 .logo {
     width: 60vw;
@@ -70,3 +74,25 @@ h1 {
     justify-content: center;
 
 }
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #000000;
+    margin: 10px;
+    width: calc(100% / 3);
+    vertical-align: 0px;
+    border-radius: 3px;
+}
+@media screen and (max-width: 769px) {
+    #pricing {
+        flex-direction: column;
+    }
+  }
